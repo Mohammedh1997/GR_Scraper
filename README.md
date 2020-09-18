@@ -1,7 +1,7 @@
 # GR_Scraper
 This is a Scrapy project to scrape books from the consulting shelf of goodreads.
 
-### Extracting other shelves
+### Extracting data from other shelves
 * Change the book_list_url link to your desired shelf link
 
 ### Extracted data
