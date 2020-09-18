@@ -4,8 +4,8 @@ This is a Scrapy project to scrape books from the consulting shelf of goodreads.
 
 ### Extracted data
 This project extracts five data sets including: 
-*Title
-*Link
+*Title*
+*Link*
 *Author
 *Number of time the book has been shelved to it's respective genre
 *Rating score out of 5
