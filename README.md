@@ -1,35 +1,21 @@
 # GR_Scraper
 
-The script is using the consulting books shelf url to scrape content. The link may change to fit your interest within the "books" spider.
+This is a Scrapy project to scrape books from the consulting shelf of goodreads.
 
-QuotesBot
+# Extracted data
+This project extracts five data sets including: 
+-Title
+-Link
+-Author
+-Number of time the book has been shelved to it's respective genre
+-Rating score out of 5
+-Quantity of ratings
 
-This is a Scrapy project to scrape quotes from famous people from http://quotes.toscrape.com (github repo).
+# Spiders
+This project contains one spider "books"
 
-This project is only meant for educational purposes.
+# Spider running command
+$ scrapy crawl books
 
-Extracted data
-This project extracts quotes, combined with the respective author names and tags. The extracted data looks like this sample:
-
-{
-    'author': 'Douglas Adams',
-    'text': '“I may not have gone where I intended to go, but I think I ...”',
-    'tags': ['life', 'navigation']
-}
-Spiders
-This project contains two spiders and you can list them using the list command:
-
-$ scrapy list
-toscrape-css
-toscrape-xpath
-Both spiders extract the same data from the same website, but toscrape-css employs CSS selectors, while toscrape-xpath employs XPath expressions.
-
-You can learn more about the spiders by going through the Scrapy Tutorial.
-
-Running the spiders
-You can run a spider using the scrapy crawl command, such as:
-
-$ scrapy crawl toscrape-css
-If you want to save the scraped data to a file, you can pass the -o option:
-
-$ scrapy crawl toscrape-css -o quotes.json
+# Scraped data to csv command
+$ scrapy crawl books -o quotes.json
