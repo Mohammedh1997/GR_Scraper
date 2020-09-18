@@ -1,21 +1,21 @@
 # GR_Scraper
-
 This is a Scrapy project to scrape books from the consulting shelf of goodreads.
 
 ### Extracted data
 This project extracts five data sets including: 
-*Title*
-*Link*
-*Author
-*Number of time the book has been shelved to it's respective genre
-*Rating score out of 5
-*Quantity of ratings
+
+* Title
+* Link
+* Author
+* Number of time the book has been shelved to it's respective genre
+* Rating score out of 5
+* Quantity of ratings
 
 ### Spiders
-This project contains one spider "books"
+* This project contains one spider "books"
 
 ### Spider running command
-$ scrapy crawl books
+* $ scrapy crawl books
 
 ### Scraped data to csv command
-$ scrapy crawl books -o quotes.json
+* $ scrapy crawl books -o quotes.json
